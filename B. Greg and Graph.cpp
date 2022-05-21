@@ -55,7 +55,7 @@ int main()
         {
             for(int j=1;j<=n;++j)
             {
-                long long new_distance = dist[i][kthlevel_v] + dis[kthlevel_v][j];
+                long long new_distance = dist[i][kthlevel_v] + dist[kthlevel_v][j];
                 dist[i][j] = min(dist[i][j],new_distance);
             }
         }
@@ -77,4 +77,3 @@ int main()
         cout<<val<<" "<<endl;
     }
 }
-

@@ -18,7 +18,7 @@ void  Floyd_Warshall(int graph[V][V])
     for(int i=0;i<V;++i) //Try of all possible starting position
     for(int j=0;j<V;++j) //Try for all possible ending position
     {
-        if(dist[i][k] == INT_MAX || dist[k][j] == INT_MAX) //skip if k is unreachable from i or j is unreachable from k
+        if(dist[i][k] == INT_MAX or dist[k][j] == INT_MAX) //skip if k is unreachable from i or j is unreachable from k
         continue;
 
         else if(dist[i][k] + dist[k][j] < dist[i][j]) //check if now distance is shorter via vertex k
